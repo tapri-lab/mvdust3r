@@ -18,6 +18,7 @@ Please see more visual results and video on our [website](https://mv-dust3rp.git
 
 ## Update Logs
 
+- 2025-5-10: data generation code for Habitat-Sim (HM3D, Gibson, MP3D).
 - 2025-1-30: data generation code of ScanNet.
 - 2025-1-1: A gradio demo, all checkpoints, training/evaluation code and training/evaluation trajectories of ScanNet.
 - 2025-1-8: demo view selection improved, better quality for multiple rooms.
@@ -86,7 +87,9 @@ some [tips](https://github.com/facebookresearch/mvdust3r/issues/5#issuecomment-2
 
 We use five data for training and test: [ScanNet](https://github.com/ScanNet/ScanNet), [ScanNet++](https://kaldir.vc.in.tum.de/scannetpp/), [HM3D](https://aihabitat.org/datasets/hm3d/), [Gibson](https://github.com/StanfordVL/GibsonEnv/blob/master/gibson/data/README.md), [MP3D](https://niessner.github.io/Matterport/). Please go to their website to sign contract, download and extract them in the folder [data](https://github.com/facebookresearch/mvdust3r/tree/main/data). [Here](https://github.com/facebookresearch/mvdust3r/tree/main/data) are more instructions.
 
-Currently we released the [trajectories](https://huggingface.co/Zhenggang/MV-DUSt3R/tree/main/trajectories) of ScanNet for evaluation. Please download it to the folder [trajectories](https://github.com/facebookresearch/mvdust3r/tree/main/trajectories) More trajectories for training and more data will be released later.
+Currently we released the [trajectories](https://huggingface.co/Zhenggang/MV-DUSt3R/tree/main/trajectories) of ScanNet for evaluation. Please download it to the folder [trajectories](https://github.com/facebookresearch/mvdust3r/tree/main/trajectories).
+
+We also open-sourced the code to generate train and evaluation trajectories for ScanNet and all datasets in Habitat-Sim (HM3D, Gibson, MP3D). please check [here]. (https://github.com/facebookresearch/mvdust3r/tree/main/scripts/tuple_gen)
 
 ## Evaluation
 

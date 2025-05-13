@@ -1,0 +1,3 @@
+python datasets_preprocess/gather_metadata.py --data-dir ./metadata/habitatSim_tree_step_2.0 --tgt-dir ./trajectories/habitatSim_tree_step_2.0
+python datasets_preprocess/gather_metadata.py --data-dir ./metadata/habitatSim_tree_step_1.0 --tgt-dir ./trajectories/habitatSim_tree_step_1.0
+python datasets_preprocess/gather_metadata.py --data-dir ./metadata/habitatSim_star_step_2.0 --tgt-dir ./trajectories/habitatSim_star_step_2.0

@@ -22,6 +22,7 @@ if args.tgt_dir is None:
     args.tgt_dir = args.data_dir
 
 def extract_scene_name(x, data_name_):
+    print(x, data_name_)
     if "_meta" == data_name_[-5:]:
         data_name = data_name_[:-5]
     else:
@@ -34,14 +35,14 @@ def extract_scene_name(x, data_name_):
         for x_ in xx:
             if 'scene' in x_:
                 return x_
-    elif "habitat_sim" in x:
+    elif "habitat_sim" in x or "habitatSim" in x:
         if "gibson" in x:
             return 'gibson'
         if "mp3d" in x:
             return "mp3d"
         xx = x.split('/')
         for x_ in xx:
-            if x_[5] == "-":
+            if len(x_) >= 6 and x_[5] == "-":
                 return x_
     raise NotImplementedError
     

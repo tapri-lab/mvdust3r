@@ -44,6 +44,7 @@ cd mvdust3r
     ```
     pixi install
     ```
+    * Run `pixi shell` to activate the environment.
 
 (version of pytorch and pytorch3d should be changed if you need other CUDA version.)
 

@@ -34,11 +34,16 @@ git clone https://github.com/facebookresearch/mvdust3r.git
 cd mvdust3r
 ```
 
-2. Install the virtual environment under anaconda.
+2. Install the virtual environment.
 
-```bash
-./install.sh
-```
+  * With conda
+    ```bash
+    ./install.sh
+    ```
+  * With pixi
+    ```
+    pixi install
+    ```
 
 (version of pytorch and pytorch3d should be changed if you need other CUDA version.)
 

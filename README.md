@@ -52,6 +52,7 @@ cd mvdust3r
 ```bash
 cd croco/models/curope/
 python setup.py build_ext --inplace
+python setup.py install
 cd ../../../
 ```
 

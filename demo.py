@@ -196,7 +196,7 @@ def get_reconstructed_scene(outdir, model, device, silent, image_size, filelist,
         imgs[3], imgs[change_id] = deepcopy(imgs[change_id]), deepcopy(imgs[3])
     
     output = inference_mv(imgs, model, device, verbose=not silent)
-    input('press enter to continue')
+    # input('press enter to continue')
 
     # print(output['pred1']['rgb'].shape, imgs[0]['img'].shape, 'aha')
     output['pred1']['rgb'] = imgs[0]['img'].permute(0,2,3,1)
